@@ -20,7 +20,7 @@ export default function Hero() {
           </h2>
 
           <p className="text-sm md:text-base text-gray-500 leading-relaxed mb-6">
-          I specialize in creating beautiful, functional websites using modern tools like React, Next.js, and Tailwind CSS.
+          "I specialize in creating beautiful, functional websites using modern tools like React, Next.js, and Tailwind CSS."
           </p>
 
           {/* Buttons */}
