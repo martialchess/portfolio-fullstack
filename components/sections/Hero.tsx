@@ -26,22 +26,23 @@ export default function Hero() {
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-            <Link href="/contact">
-            <a
-              className="bg-primary text-black px-6 py-2 rounded-full font-medium shadow hover:opacity-90 transition"
-            >
-              Contact Me
-            </a>
-            </Link>
-            <a
-              href="/RidaMalik-CV.pdf"
-              className="border-2 border-primary text-primary px-6 py-2 rounded-full font-medium hover:bg-primary hover:text-white transition"
-              download
-            >
-              Download CV
-            </a>
+          <div className="flex flex-col md:flex-row gap-4 items-center md:items-start justify-center md:justify-start mt-6">
+          <Link
+          href="/contact"
+          className="bg-primary text-black px-6 py-2 rounded-full font-medium shadow hover:opacity-90 transition w-full md:w-auto text-center"
+          >
+          Contact Me
+          </Link>
+  
+          <a
+          href="/RidaMalik-CV.pdf"
+          className="border-2 border-primary text-primary px-6 py-2 rounded-full font-medium hover:bg-primary hover:text-white transition w-full md:w-auto text-center"
+          download
+          >
+          Download CV
+          </a>
           </div>
+
         </div>
 
         {/* Right: Profile Image */}

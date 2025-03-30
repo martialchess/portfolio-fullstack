@@ -19,7 +19,7 @@ const Contact = () => {
     setStatus("Sending...");
 
     try {
-      const res = await fetch("https://portfolio-fullstack-2yyq.onrender.com/api.contact", {
+      const res = await fetch("https://portfolio-fullstack-2yyq.onrender.com/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -40,7 +40,7 @@ const Contact = () => {
 
   return (
     <section className="py-20 bg-[#f9fafb] px-4" id="contact">
-      <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-md p-8">
+      <div className="max-w-2xl mx-auto bg-white rounded-xl shadow-md px-6 py-10 md:px-10">
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">Contact Me</h2>
 
         <form className="grid grid-cols-1 md:grid-cols-2 gap-6" onSubmit={handleSubmit}>
