@@ -29,10 +29,11 @@ export default function Hero() {
           <div className="flex flex-col md:flex-row gap-4 items-center md:items-start justify-center md:justify-start mt-6">
           <Link
           href="/contact"
-          className="bg-primary text-black px-6 py-2 rounded-full font-medium shadow hover:opacity-90 transition w-full md:w-auto text-center"
+          className="border-2 border-black text-black px-6 py-2 rounded-full font-medium shadow hover:bg-black hover:text-white transition w-full md:w-auto text-center"
           >
           Contact Me
           </Link>
+
   
           <a
           href="/RidaMalik-CV.pdf"
