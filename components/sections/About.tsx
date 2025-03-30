@@ -4,7 +4,7 @@ import Image from "next/image";
 const About = () => {
   return (
     <section className="py-20 bg-[#f9fafb]">
-      <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+      <div className="max-w-5xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
         {/* Profile Photo */}
         <div className="flex justify-center">
           <Image
@@ -12,7 +12,7 @@ const About = () => {
             height={300}
             src="/images/profilephoto1.jpg"
             alt="Profile"
-            className="w-[420px] rounded-xl shadow-md object-cover"
+            className="w-[380px] rounded-xl shadow-md object-cover"
           />
         </div>
 

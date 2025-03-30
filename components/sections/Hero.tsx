@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section id="hero" className="py-20 px-4 bg-background relative">
       {/* Main Glass Card */}
-      <div className="max-w-6xl mx-auto bg-white bg-opacity-80 shadow-xl rounded-3xl flex flex-col-reverse md:flex-row items-center justify-between px-10 py-14 backdrop-blur-md">
+      <div className="max-w-5xl mx-auto bg-white bg-opacity-80 shadow-xl rounded-3xl flex flex-col-reverse md:flex-row items-center justify-between px-10 py-14 backdrop-blur-md">
         {/* Left: Text */}
         <div className="md:w-1/2 text-center md:text-left">
           <p className="text-sm text-[#3F83F8] mb-2">Hi, I am</p>
@@ -44,19 +44,19 @@ export default function Hero() {
         </div>
 
         {/* Right: Profile Image */}
-        <div className="md:w-1/2 flex justify-center mb-10 md:mb-0">
+        <div className="md:w-1/2 flex justify-center mb-15 md:mb-0">
           <Image
             src="/images/profilephoto.jpg"
             alt="Profile"
-            width={300}
-            height={300}
-            className="w-[280px] h-[280px] rounded-full shadow-lg object-cover"
+            width={210}
+            height={210}
+            className="w-[250px] h-[250px] rounded-full shadow-lg object-cover"
           />
         </div>
       </div>
 
       {/* Floating Stat Card */}
-      <div className="max-w-6xl mx-auto -mt-14 z-10 relative bg-white shadow-lg rounded-4xl px-4 py-6 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div className="max-w-4xl mx-auto -mt-10 z-10 relative bg-white shadow-lg rounded-4xl px-4 py-6 flex flex-col md:flex-row justify-between items-center gap-6">
         <div className="flex items-center space-x-4">
           <div className="text-blue-500 text-3xl">
             <FaChartArea />
