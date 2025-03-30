@@ -1,6 +1,7 @@
 import React from "react";
 import { FaChartArea, FaBattleNet, FaCat } from "react-icons/fa";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -26,12 +27,13 @@ export default function Hero() {
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+            <Link href="/contact">
             <a
-              href="/contact"
               className="bg-primary text-black px-6 py-2 rounded-full font-medium shadow hover:opacity-90 transition"
             >
               Contact Me
             </a>
+            </Link>
             <a
               href="/RidaMalik-CV.pdf"
               className="border-2 border-primary text-primary px-6 py-2 rounded-full font-medium hover:bg-primary hover:text-white transition"
