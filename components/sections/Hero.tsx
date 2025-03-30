@@ -1,5 +1,6 @@
 import React from "react";
 import { FaChartArea, FaBattleNet, FaCat } from "react-icons/fa";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -20,7 +21,7 @@ export default function Hero() {
           </h2>
 
           <p className="text-sm md:text-base text-gray-500 leading-relaxed mb-6">
-          "I specialize in creating beautiful, functional websites using modern tools like React, Next.js, and Tailwind CSS."
+          &quotI specialize in creating beautiful, functional websites using modern tools like React, Next.js, and Tailwind CSS.&quot
           </p>
 
           {/* Buttons */}
@@ -43,10 +44,12 @@ export default function Hero() {
 
         {/* Right: Profile Image */}
         <div className="md:w-1/2 flex justify-center mb-10 md:mb-0">
-          <img
-            src="/images/profilephoto.jpg"
-            alt="Rida Malik"
-            className="w-60 h-60 object-cover rounded-full shadow-md border-4 border-white"
+          <Image
+            src="/images/profilephoto1.jpg"
+            alt="Profile"
+            width={300}
+            height={300}
+            className="w-[420px] h-[420px] rounded-full shadow-lg object-cover"
           />
         </div>
       </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const About = () => {
   return (
@@ -7,7 +8,9 @@ const About = () => {
         
         {/* Profile Photo */}
         <div className="flex justify-center">
-          <img
+          <Image
+            width={300}
+            height={300}
             src="/images/profilephoto1.jpg"
             alt="Profile"
             className="w-[420px] rounded-xl shadow-md object-cover"
@@ -18,7 +21,7 @@ const About = () => {
         <div>
           <h2 className="text-3xl font-bold text-gray-800 mb-4">About Me</h2>
           <p className="text-gray-600 leading-relaxed">
-            "I'm a passionate developer with a love for creating dynamic and responsive web applications. I have a strong foundation in JavaScript, React, and Node.js, and I'm always eager to learn new technologies and improve my skills. My goal is to build applications that not only meet user needs but also provide a seamless and enjoyable experience. In my free time, I love exploring new programming languages, contributing to open-source projects, and staying updated with the latest trends in web development. Currently I'm pursuing backend development and looking to expand my knowledge in cloud technologies and DevOps practices."
+            "I&apos;m a passionate developer with a love for creating dynamic and responsive web applications. I have a strong foundation in JavaScript, React, and Node.js, and I&apos;m always eager to learn new technologies and improve my skills. My goal is to build applications that not only meet user needs but also provide a seamless and enjoyable experience. In my free time, I love exploring new programming languages, contributing to open-source projects, and staying updated with the latest trends in web development. Currently I&apos;m pursuing backend development and looking to expand my knowledge in cloud technologies and DevOps practices."
           </p>
 
           {/* Contact Info */}
