@@ -19,7 +19,7 @@ const Contact = () => {
     setStatus("Sending...");
 
     try {
-      const res = await fetch("https://portfolio-fullstack-2yyq.onrender.com", {
+      const res = await fetch("https://portfolio-fullstack-2yyq.onrender.com/api.contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
