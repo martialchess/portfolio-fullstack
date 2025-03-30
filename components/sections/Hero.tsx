@@ -45,11 +45,11 @@ export default function Hero() {
         {/* Right: Profile Image */}
         <div className="md:w-1/2 flex justify-center mb-10 md:mb-0">
           <Image
-            src="/images/profilephoto1.jpg"
+            src="/images/profilephoto.jpg"
             alt="Profile"
             width={300}
             height={300}
-            className="w-[420px] h-[420px] rounded-full shadow-lg object-cover"
+            className="w-[280px] h-[280px] rounded-full shadow-lg object-cover"
           />
         </div>
       </div>
