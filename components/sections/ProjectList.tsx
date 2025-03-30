@@ -18,7 +18,7 @@ const ProjectList = () => {
 
   return (
     <section className="py-20 bg-[#f9fafb]">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-3xl mx-auto px-4">
         <div className="w-full bg-[#e8f0fe] py-4 mb-12">
           <h2 className="text-3xl font-bold text-gray-800 text-center">
             Recent Projects
