@@ -46,7 +46,7 @@ export default function BlogPostPage({ post }: { post: BlogPostWithContent }) {
         {/* Adding share links here */}
         <div className="mt-10 flex gap-4">
           <a
-            href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(fullUrl)}`}
+            href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent("https://portfolio-fullstack-frontend.onrender.com/blog")}`}
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:underline"
@@ -55,7 +55,7 @@ export default function BlogPostPage({ post }: { post: BlogPostWithContent }) {
             </a>
             
             <a
-            href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(fullUrl)}`}
+            href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent("https://portfolio-fullstack-frontend.onrender.com/blog")}`}
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:underline"
