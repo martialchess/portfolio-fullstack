@@ -4,11 +4,12 @@ import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
 const postsDirectory = path.join(process.cwd(), 'content/blog');
+import { BlogPost } from "@/types/blog";
 
 export function getSortedPosts() {
     const fileNames = fs.readdirSync(postsDirectory);
 
-    const posts = fileNames.map((fileName)=> {
+    const posts: BlogPost[] = fileNames.map((fileName)=> {
         const slug = fileName.replace(/\.md$/, '');
         const fullPath = path.join(postsDirectory, fileName);
         const fileContents = fs.readFileSync(fullPath, 'utf8');
@@ -16,11 +17,13 @@ export function getSortedPosts() {
 
         return {
             slug, 
-            ...data,
+            title: data.title,
+            date: data.date,
+            description: data.description,
         };
     });
 
-    return posts.sort((a: any, b: any) => (a.date < b.date ? 1 : -1));
+    return posts.sort((a, b) => (a.date < b.date ? 1 : -1));
 }
 
 export async function getPostBySlug(slug: string) {

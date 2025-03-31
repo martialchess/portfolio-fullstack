@@ -18,7 +18,7 @@ export default function Blog({ posts }: { posts:  BlogPost[] }) {
         <section className="max-w-4xl mx-auto py-20 px-4">
             <h1 className="text-4xl font-bold mb-10 text-center">My Blog</h1>
             <div className="space-y-8">
-                {posts.map((post: any) => (
+                {posts.map((post: BlogPost) => (
                     <div key={post.slug} className="p-6 bg-white rounded-xl shadow-md">
                         <h2 className="text-2xl font-semibold mb-2">{post.title}</h2>
                         <p className="text-gray-500 text-sm">{post.date}</p>
