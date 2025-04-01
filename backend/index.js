@@ -9,7 +9,7 @@ const app = express();
 
 // ✅ Use CORS middleware BEFORE any routes
 app.use(cors({
-  origin: ["http://localhost:3000", "https://portfolio-fullstack-frontend.onrender.com"],
+  origin: ["http://localhost:3000", "https://portfolio-fullstack-2yyq.onrender.com"],
   methods: ["GET", "POST", "OPTIONS"],
   allowedHeaders: ["Content-Type"],
   optionsSuccessStatus: 200 //Adding this to resolve CORS failure
