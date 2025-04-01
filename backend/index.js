@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const contactRoute = require("./routes/contact");
+const contactRoute = require("./routes/contact"); //testing .env update
 
 const app = express();
 
