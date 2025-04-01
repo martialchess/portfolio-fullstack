@@ -15,6 +15,9 @@ app.use(cors({
   optionsSuccessStatus: 200 //Adding this to resolve CORS failure
 }));
 
+//preflight handler
+app.options("*", cors());
+
 // ✅ Parse JSON bodies
 app.use(express.json());
 
