@@ -12,6 +12,7 @@ app.use(cors({
   origin: ["http://localhost:3000", "https://portfolio-fullstack-frontend.onrender.com"],
   methods: ["GET", "POST", "OPTIONS"],
   allowedHeaders: ["Content-Type"],
+  optionsSuccessStatus: 200 //Adding this to resolve CORS failure
 }));
 
 // ✅ Parse JSON bodies
